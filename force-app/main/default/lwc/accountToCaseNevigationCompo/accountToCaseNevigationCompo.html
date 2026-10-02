@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Create your Own Case" icon-name="Standard:Case">
+        <div>
+            <lightning-input label="Subject" onchange={handleSubjectChange}></lightning-input>
+            <lightning-textarea label="Subject" onchange={handleDescription}></lightning-textarea>
+        </div>
+        <div>
+            <lightning-button label="Create Case" onclick={handleCreateCase} variant="Brand"></lightning-button>
+        </div>
+    </lightning-card>
+</template>

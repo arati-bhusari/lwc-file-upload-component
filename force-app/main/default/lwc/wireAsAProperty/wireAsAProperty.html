@@ -1,0 +1,15 @@
+<template>
+
+    <template if:true={AccountList.data}>
+      <template for:each={AccountList.data} for:item="Acc">
+        <div key={Acc.Id}>
+            <p>Account Name= {Acc.Name}</p>
+            <p>Account Industry= {Acc.Industry}</p>
+            
+        </div>
+      </template>
+    </template>
+    <template if:true={AccountList.error}>
+        <p>Error because no contact is present</p>
+    </template>
+</template>

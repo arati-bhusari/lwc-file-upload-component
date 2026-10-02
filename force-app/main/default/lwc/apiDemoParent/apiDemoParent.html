@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="ApiDemoParentComponent">
+        <lightning-input
+            label="Enter Message"
+            onchange={handleChange}>
+        </lightning-input>
+
+        <c-api-demo-child message={parentMessage}></c-api-demo-child>
+    </lightning-card>
+</template>
